@@ -1629,7 +1629,7 @@ public class FilterTabsView extends FrameLayout {
                 counterVisible = tabView.tabCounterVisible;
             }
         }
-        if (NekoConfig.tabStyleStroke.Bool()) {
+        if (NaConfig.INSTANCE.getTabStyleStroke.Bool()) {
             selectorDrawable.setStroke(AndroidUtilities.dp(1), Theme.getColor(activeTextColorKey, resourcesProvider));
             selectorDrawable.setColor(ColorUtils.setAlphaComponent(Theme.getColor(tabLineColorKey, resourcesProvider), 50));
         } else {
@@ -1645,7 +1645,7 @@ public class FilterTabsView extends FrameLayout {
 
             final int y = height / 2 - dp(14);
             selectorDrawable.setBounds((int) (indicatorX - dp(TAB_INTERNAL_PADDING) - add), y, (int) (indicatorX + indicatorWidth + dp(TAB_INTERNAL_PADDING) + add), y + dp(28));
-            selectorDrawable.setAlpha(NekoConfig.tabStyleStroke.Bool() ? 255 : 31);
+            selectorDrawable.setAlpha(NaConfig.INSTANCE.getTabStyleStroke.Bool() ? 255 : 31);
             selectorDrawable.draw(canvas);
             canvas.restore();
         }
