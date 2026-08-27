@@ -1646,7 +1646,7 @@ public class FilterTabsView extends FrameLayout {
 
             final int y = height / 2 - dp(14);
             selectorDrawable.setBounds((int) (indicatorX - dp(TAB_INTERNAL_PADDING) - add), y, (int) (indicatorX + indicatorWidth + dp(TAB_INTERNAL_PADDING) + add), y + dp(28));
-            selectorDrawable.setAlpha(NaConfig.INSTANCE.getTabStyleStroke.Bool() ? 255 : 31);
+            selectorDrawable.setAlpha(NaConfig.INSTANCE.getTabStyleStroke().Bool() ? 255 : 31);
             selectorDrawable.draw(canvas);
             canvas.restore();
         }
