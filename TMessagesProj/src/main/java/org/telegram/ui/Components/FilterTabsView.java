@@ -76,6 +76,7 @@ import java.util.Map;
 import tw.nekomimi.nekogram.NekoXConfig;
 import tw.nekomimi.nekogram.NekoConfig;
 import tw.nekomimi.nekogram.folder.FolderIconHelper;
+import xyz.nextalone.nagram.NaConfig;
 
 @SuppressLint("ViewConstructor")
 public class FilterTabsView extends FrameLayout {
