@@ -762,7 +762,7 @@ public class ScrollSlidingTextTabStrip extends HorizontalScrollView implements T
                     getPaddingLeft() + (int) r - dp(4),
                     height - getPaddingBottom() - dp(4)
             );
-            if (NaConfig.INSTANCE.getTabStyleStroke.Bool()) {
+            if (NaConfig.INSTANCE.getTabStyleStroke().Bool()) {
                 selectorDrawable.setStroke(AndroidUtilities.dp(1), processColor(Theme.getColor(activeTextColorKey, resourcesProvider)));
             } else {
                 selectorDrawable.setStroke(0, 0);
