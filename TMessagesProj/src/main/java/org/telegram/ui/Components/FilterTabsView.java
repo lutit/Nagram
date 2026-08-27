@@ -1630,7 +1630,7 @@ public class FilterTabsView extends FrameLayout {
                 counterVisible = tabView.tabCounterVisible;
             }
         }
-        if (NaConfig.INSTANCE.getTabStyleStroke.Bool()) {
+        if (NaConfig.INSTANCE.getTabStyleStroke().Bool()) {
             selectorDrawable.setStroke(AndroidUtilities.dp(1), Theme.getColor(activeTextColorKey, resourcesProvider));
             selectorDrawable.setColor(ColorUtils.setAlphaComponent(Theme.getColor(tabLineColorKey, resourcesProvider), 50));
         } else {
